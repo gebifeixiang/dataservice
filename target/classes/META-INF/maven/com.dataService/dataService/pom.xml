@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-   <!-- 本项目的配置信息 -->
+	<!-- 本项目的配置信息 -->
 	<groupId>com.dataService</groupId>
 	<artifactId>dataService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -26,11 +26,11 @@
 	</properties>
 
 	<dependencies>
-	
-	<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<!-- 提供eureka整合的包 -->
 		<!-- 服务与注册中心 -->
 		<dependency>
@@ -42,7 +42,7 @@
 			<artifactId>spring-boot-admin-starter-client</artifactId>
 			<version>1.5.6</version>
 		</dependency>
-			<!-- mybatis依赖 begin -->
+		<!-- mybatis依赖 begin -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
@@ -72,8 +72,8 @@
 			<version>RELEASE</version>
 		</dependency>
 		<!-- redis配置 end -->
-		
-			<!-- mq begin -->
+
+		<!-- mq begin -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-activemq</artifactId>
@@ -84,7 +84,21 @@
 			<!-- <version>5.7.0</version> -->
 		</dependency>
 		<!-- mq end -->
-
+		<!-- elasticsearch begin -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jna</groupId>
+			<artifactId>jna</artifactId>
+			<version>3.0.9</version>
+		</dependency>
+		<!--elasticsearch end -->
+		<dependency>
+			<groupId>io.searchbox</groupId>
+			<artifactId>jest</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -109,7 +123,7 @@
 		</dependencies>
 	</dependencyManagement>
 
-	
+
 
 
 </project>
